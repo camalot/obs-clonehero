@@ -1,0 +1,9 @@
+Jenkinsfile
+Jenkinsfile.deploy
+.deploy/
+test/
+app.json
+.npmrc
+.env
+node_modules/
+app.json

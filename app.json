@@ -1,0 +1,30 @@
+{
+	"name": "obs-lastfm",
+	"description": "Endpoint for showing now playing through LastFM Scobbled tracks",
+	"keywords": [
+		"obs",
+		"nowplaying",
+		"music",
+		"lastfm"
+	],
+	"repository": "https://github.com/camalot/obs-lastfm.git",
+	"website": "https://github.com/camalot/obs-lastfm",
+	"env": {
+		"LASTFM_API_KEY": {
+			"description": "LastFM API Key",
+			"value": "",
+			"required": true
+		},
+		"LASTFM_API_SECRET": {
+			"description": "LastFM API Secret",
+			"value": "",
+			"required": true
+		}
+	},
+	"image": "heroku/nodejs",
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}

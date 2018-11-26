@@ -7,6 +7,7 @@ const config = require('../../config');
 
 let readTrack = () => {
 	return new Promise((resolve, reject) => {
+		console.log(config.clonehero);
 		let filePath = path.join(config.clonehero.path, 'currentsong.txt');
 		if (fs.existsSync(filePath)) {
 			fs.readFile(filePath, 'utf8', (err, contents) => {
@@ -36,6 +37,8 @@ module.exports = {
 					} else {
 						return resolve(null);
 					}
+				}).catch((err) => {
+					return resolve(null);
 				});
 		});
 	}

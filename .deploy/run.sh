@@ -78,5 +78,6 @@ docker run -d \
 	--name "${BUILD_PROJECT}" \
 	-e OCH_CLONEHERO_PATH="${OCH_CLONEHERO_PATH}" \
 	-e OCH_LASTFM_LOOKUP="${OCH_LASTFM_LOOKUP}" \
+	-v /mnt/data/clonehero:/clonehero \
 	-p "49170:3000" \
 	-t "${DOCKER_IMAGE}";

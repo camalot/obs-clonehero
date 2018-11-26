@@ -76,7 +76,7 @@ docker run -d \
 	--user 0 \
 	--restart unless-stopped \
 	--name "${BUILD_PROJECT}" \
-	-e LASTFM_API_SECRET="${LASTFM_API_SECRET}" \
-	-e LASTFM_API_KEY="${LASTFM_API_KEY}" \
+	-e OCH_CLONEHERO_PATH="${OCH_CLONEHERO_PATH}" \
+	-e OCH_LASTFM_LOOKUP="${OCH_LASTFM_LOOKUP}" \
 	-p "49170:3000" \
 	-t "${DOCKER_IMAGE}";

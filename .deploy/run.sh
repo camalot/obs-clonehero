@@ -78,5 +78,5 @@ docker run -d \
 	--name "${BUILD_PROJECT}" \
 	-e LASTFM_API_SECRET="${LASTFM_API_SECRET}" \
 	-e LASTFM_API_KEY="${LASTFM_API_KEY}" \
-	-p "49160:3000" \
+	-p "49170:3000" \
 	-t "${DOCKER_IMAGE}";

@@ -24,9 +24,9 @@ The container exposes port 3000. `-P` will map the port on the host.
 ```shell
 $ docker run -d -P \
 	--restart unless-stopped \
-	--name "obs-clone" \
-	-e LASTFM_API_KEY="${LASTFM_API_KEY}" \
-	-e LASTFM_API_SECRET="${LASTFM_API_SECRET}" \
+	--name "obs-clonehero" \
+	-e OCH_CLONEHERO_PATH="${OCH_CLONEHERO_PATH}" \
+	-e OCH_LASTFM_LOOKUP="${OCH_LASTFM_LOOKUP}" \
 	-t camalot/obs-lastfm
 ```
 
@@ -36,6 +36,7 @@ $ docker run -d -P \
 - Add the following:
 ```
 OCH_CLONEHERO_PATH=<path-to-clone-hero-directory>
+OCH_LASTFM_LOOKUP=<url-to-lastfm-lookup-service>
 ```
 - Open shell and run the following:
 ```shell

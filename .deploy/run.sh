@@ -39,8 +39,8 @@ PULL_REPOSITORY="${DOCKER_REGISTRY}";
 [[ -z "${BUILD_VERSION// }" ]] && __error "Environment variable 'CI_BUILD_VERSION' missing or is empty";
 [[ -z "${BUILD_ORG// }" ]] && __error "Environment variable 'CI_DOCKER_ORGANIZATION' missing or is empty";
 
-[[ -z "${LASTFM_API_SECRET// }" ]] && __error "Environment variable 'LASTFM_API_SECRET' missing or is empty";
-[[ -z "${LASTFM_API_KEY// }" ]] && __error "Environment variable 'LASTFM_API_KEY' missing or is empty";
+[[ -z "${OCH_CLONEHERO_PATH// }" ]] && __error "Environment variable 'OCH_CLONEHERO_PATH' missing or is empty";
+[[ -z "${OCH_LASTFM_LOOKUP// }" ]] && __error "Environment variable 'OCH_LASTFM_LOOKUP' missing or is empty";
 
 DOCKER_IMAGE="${BUILD_ORG}/${BUILD_PROJECT}:${BUILD_VERSION}";
 
